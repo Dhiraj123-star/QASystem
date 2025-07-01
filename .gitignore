@@ -1,0 +1,27 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# SQLite
+qa.db
+
+# Chroma
+/root/.chroma/
+
+# Environment variables
+.env
+
+# Docker
+*.log
+
+# Misc
+.DS_Store
+*.swp
