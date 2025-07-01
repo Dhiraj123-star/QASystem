@@ -1,26 +1,29 @@
 
-# QASystem  
-A question-answering system that processes CSV files containing questions, stores embeddings in Chroma, generates answers using OpenAI, and persists question-answer pairs in a relational database. Query answers are enhanced with vector similarity search.  
+# 🤖 QASystem
 
-✨ **Features**  
-- **Fast CSV Parsing**: Uses Polars for efficient CSV processing.  
-- **Vector Search**: Chroma for storing and querying question embeddings.  
-- **AI-Powered Answers**: OpenAI for embeddings (text-embedding-3-small) and answers 
-(gpt-4o-mini).  
-- **Database Storage**: SQLAlchemy with SQLite (dev) or Postgres (prod) for question-answer persistence.  
-- **REST API**: FastAPI for uploading CSVs and querying answers.  
-- **Containerized**: Docker with Gunicorn/Uvicorn for deployment.  
-- **Secure Configuration**: Environment variables managed with python-dotenv.  
+A simple, production-ready **question-answering system** that enables users to send questions via a REST API and receive intelligent answers powered by **OpenAI's gpt-4o-mini**.
+
+---
+
+## ✨ Features
+
+- **🧠 Question Answering:** Submit a question to the `/query/` endpoint and receive an AI-generated response.
+- **⚡ FastAPI-Powered:** Asynchronous, high-performance REST API using FastAPI.
+- **🔐 Secure Configuration:** API keys and secrets managed through environment variables.
+- **🌐 CORS Enabled:** Fully accessible from browser-based tools like Swagger UI.
+- **📦 Containerized Deployment:** Easily deployable with Docker and Gunicorn/Uvicorn for production.
+- **📝 Basic Logging:** Track requests and errors for debugging and monitoring.
 
 
-📊 **Tech Stack**
 
-* FastAPI: REST API framework
-* Polars: Fast CSV parsing
-* OpenAI API: Embeddings and answer generation
-* Chroma: Vector database
-* SQLAlchemy: ORM for SQLite/Postgres
-* python-dotenv: Environment variable management
-* Gunicorn/Uvicorn: Production-ready server
-* Docker: Containerization
+## 📊 Tech Stack
+
+* **FastAPI** — REST API framework with built-in async support and auto-generated docs.
+* **OpenAI API** — Uses `gpt-4o-mini` to generate intelligent answers.
+* **Gunicorn + Uvicorn** — ASGI production server combination for scalable performance.
+* **python-dotenv** — Manage configuration securely using `.env` files.
+* **Docker + Docker Compose** — Containerized, portable deployment.
+
+---
+
 
