@@ -1,0 +1,10 @@
+fastapi
+uvicorn
+polars
+openai
+SQLAlchemy
+psycopg2-binary
+chromadb
+python-dotenv
+gunicorn
+python-multipart
