@@ -6,16 +6,18 @@ services:
       context: .
       dockerfile: Dockerfile
     expose:
-      - "8000"  # Internal only, exposed to nginx
+      - "8000"
     env_file:
       - .env
 
 
   nginx:
     image: nginx:latest
-    ports:
-      - "80:80"
     volumes:
-      - ./nginx/default.conf:/etc/nginx/conf.d/default.conf:ro
+      - ./nginx/selfsigned.conf:/etc/nginx/conf.d/default.conf:ro
+      - ./nginx/certs:/etc/nginx/certs:ro
+    ports:
+      - "443:443"
     depends_on:
       - qasystem
+
