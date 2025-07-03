@@ -22,3 +22,5 @@ qa.db
 # Docker
 *.log
 
+# NGINX certificates
+nginx/certs/
