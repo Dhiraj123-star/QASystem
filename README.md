@@ -1,4 +1,3 @@
-
 # 🤖 QASystem
 
 A simple, production-ready **question-answering system** that enables users to send questions via a REST API and receive intelligent answers powered by **OpenAI's gpt-4o-mini**.
@@ -8,22 +7,23 @@ A simple, production-ready **question-answering system** that enables users to s
 ## ✨ Features
 
 - **🧠 Question Answering:** Submit a question to the `/query/` endpoint and receive an AI-generated response.
+- **💱 Currency Conversion Assistant:** Ask natural language currency conversion queries (e.g., "Convert 100 USD to EUR") via the `/currency/` endpoint, backed by OpenAI function calling.
+- **📦 Product Info Extraction:** Extract structured product metadata from free-form descriptions using the `/extract-product/` endpoint.
+- **🧩 OpenAI Tool Calling:** Utilizes OpenAI's function calling capabilities to invoke structured tools like currency conversion and data extraction.
 - **⚡ FastAPI-Powered:** Asynchronous, high-performance REST API using FastAPI.
+- **🌐 NGINX Reverse Proxy:** Routes incoming requests through NGINX for improved performance and production readiness.
 - **🔐 Secure Configuration:** API keys and secrets managed through environment variables.
 - **🌐 CORS Enabled:** Fully accessible from browser-based tools like Swagger UI.
 - **📦 Containerized Deployment:** Easily deployable with Docker and Gunicorn/Uvicorn for production.
-- **📝 Basic Logging:** Track requests and errors for debugging and monitoring.
+- **📝 Basic Logging:** Tracks API requests, responses, and errors using Python’s logging module.
 
-
+---
 
 ## 📊 Tech Stack
 
 * **FastAPI** — REST API framework with built-in async support and auto-generated docs.
-* **OpenAI API** — Uses `gpt-4o-mini` to generate intelligent answers.
+* **OpenAI API** — Uses `gpt-4o-mini` to generate intelligent answers and execute tool calls.
 * **Gunicorn + Uvicorn** — ASGI production server combination for scalable performance.
 * **python-dotenv** — Manage configuration securely using `.env` files.
 * **Docker + Docker Compose** — Containerized, portable deployment.
-
----
-
-
+* **NGINX** — Acts as a reverse proxy in front of the FastAPI service for routing and scalability.
