@@ -13,6 +13,7 @@ A simple, production-ready **question-answering system** that enables users to s
 - **⚡ FastAPI-Powered:** Asynchronous, high-performance REST API using FastAPI.
 - **🌐 NGINX Reverse Proxy:** Routes incoming requests through NGINX for improved performance and production readiness.
 - **🔐 Secure Configuration:** API keys and secrets managed through environment variables.
+- **🛡️ Local HTTPS Support:** Supports SSL via self-signed certificates for secure local development over HTTPS.
 - **🌐 CORS Enabled:** Fully accessible from browser-based tools like Swagger UI.
 - **📦 Containerized Deployment:** Easily deployable with Docker and Gunicorn/Uvicorn for production.
 - **📝 Basic Logging:** Tracks API requests, responses, and errors using Python’s logging module.
@@ -27,3 +28,4 @@ A simple, production-ready **question-answering system** that enables users to s
 * **python-dotenv** — Manage configuration securely using `.env` files.
 * **Docker + Docker Compose** — Containerized, portable deployment.
 * **NGINX** — Acts as a reverse proxy in front of the FastAPI service for routing and scalability.
+* **OpenSSL** — Used to generate self-signed certificates for HTTPS support in local development.
