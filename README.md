@@ -14,6 +14,7 @@ A simple, production-ready **question-answering system** that enables users to s
 - **🌐 NGINX Reverse Proxy:** Routes incoming requests through NGINX for improved performance and production readiness.
 - **🔐 Secure Configuration:** API keys and secrets managed through environment variables.
 - **🛡️ Local HTTPS Support:** Supports SSL via self-signed certificates for secure local development over HTTPS.
+- **🔄 GitHub Actions CI/CD:** Automatically builds and pushes Docker images to Docker Hub (`dhiraj918106/qasystem`) on every push to `main`.
 - **🌐 CORS Enabled:** Fully accessible from browser-based tools like Swagger UI.
 - **📦 Containerized Deployment:** Easily deployable with Docker and Gunicorn/Uvicorn for production.
 - **📝 Basic Logging:** Tracks API requests, responses, and errors using Python’s logging module.
@@ -29,3 +30,4 @@ A simple, production-ready **question-answering system** that enables users to s
 * **Docker + Docker Compose** — Containerized, portable deployment.
 * **NGINX** — Acts as a reverse proxy in front of the FastAPI service for routing and scalability.
 * **OpenSSL** — Used to generate self-signed certificates for HTTPS support in local development.
+* **GitHub Actions** — CI/CD pipeline that builds and pushes images to Docker Hub automatically.
